@@ -10,6 +10,14 @@
     "name": "Matteo Gabriele",
     "email": "matteo@homerun.co"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/homerunco/ng-vue-uirouter"
+  },
+  "bugs": {
+    "url": "https://github.com/homerunco/ng-vue-uirouter/issues"
+  },
+  "homepage": "https://github.com/homerunco/ng-vue-uirouter#readme",
   "keywords": [
     "vue",
     "angualar",
