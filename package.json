@@ -1,0 +1,43 @@
+{
+  "name": "ng-vue-uirouter",
+  "version": "0.1.0",
+  "description": "Vue Router mock to communicate with Angular UI Router",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "author": {
+    "name": "Matteo Gabriele",
+    "email": "matteo@homerun.co"
+  },
+  "keywords": [
+    "vue",
+    "angualar",
+    "ng",
+    "ui-router"
+  ],
+  "license": "MIT",
+  "main": "./dist/ng-vue-uirouter.js",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "compression-webpack-plugin": "^1.1.3",
+    "css-loader": "^0.28.9",
+    "ora": "^1.3.0",
+    "peer-deps-externals-webpack-plugin": "^1.0.2",
+    "vue-loader": "^13.7.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1"
+  },
+  "peerDependencies": {
+    "angular": "1.5.8",
+    "angular-ui-router": "^1.0.3",
+    "vue": "^2.5.13"
+  }
+}

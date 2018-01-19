@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browser": ["last 3 version"]
+      }
+    }],
+    "stage-3"
+  ]
+}
