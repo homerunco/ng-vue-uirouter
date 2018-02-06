@@ -1,4 +1,4 @@
-import RouterLink from './components/RouterLink.vue'
+import NgLink from './components/NgLink.vue'
 
 angular.module('ngVueUIRouter', ['ui.router'])
   .factory('$ngVueUIRouter', ['$state', ($state) => {
@@ -21,7 +21,7 @@ angular.module('ngVueUIRouter', ['ui.router'])
           }
         }
 
-        Vue.prototype.$router = Vue.$router = {
+        Vue.prototype.$uiRouter = Vue.$uiRouter = {
           push (name, { params }) {
             $state.go(name, params)
           },
@@ -31,13 +31,13 @@ angular.module('ngVueUIRouter', ['ui.router'])
           }
         }
 
-        Object.defineProperty(Vue.prototype, '$route', {
+        Object.defineProperty(Vue.prototype, '$uiRoute', {
           get () {
             return currentRoute()
           }
         })
 
-        Vue.component('router-link', RouterLink)
+        Vue.component('ng-link', NgLink)
       }
     }
   }])
