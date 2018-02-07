@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: 'NgLink',
+    name: 'RouterLink',
 
     props: {
       to: {
@@ -31,7 +31,7 @@
     methods: {
       navigate () {
         const { params, name } = this.to
-        this.$uiRouter.push(name, { params })
+        this.$router.push(name, { params })
       }
     }
   }
