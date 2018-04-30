@@ -22,7 +22,7 @@ angular.module('ngVueUIRouter', ['ui.router'])
         }
 
         Vue.prototype.$router = Vue.$router = {
-          push (name, { params }) {
+          push (name, { params = {} }) {
             $state.go(name, params)
           },
 
