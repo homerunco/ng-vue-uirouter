@@ -30,7 +30,8 @@
 
     methods: {
       navigate () {
-        this.$router.push(this.to.name, {
+        this.$router.push({
+          name: this.to.name,
           params: this.to.params || {}
         })
       }

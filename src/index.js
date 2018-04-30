@@ -22,8 +22,8 @@ angular.module('ngVueUIRouter', ['ui.router'])
         }
 
         Vue.prototype.$router = Vue.$router = {
-          push (name, { params = {} }) {
-            $state.go(name, params)
+          push (params) {
+            $state.go(params)
           },
 
           get currentRoute () {
