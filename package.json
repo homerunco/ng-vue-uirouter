@@ -1,6 +1,6 @@
 {
   "name": "ng-vue-uirouter",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Vue Router mock to communicate with Angular UI Router",
   "scripts": {
     "dev": "webpack --watch",
