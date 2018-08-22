@@ -22,8 +22,15 @@ angular.module('ngVueUIRouter', ['ui.router'])
         }
 
         Vue.prototype.$router = Vue.$router = {
-          push (params) {
-            $state.go(params)
+          push (data) {
+            const name = typeof data === 'string' ? data : data.name
+            const params = data.params
+
+            if (params) {
+              $state.go(name, params)
+            } else {
+              $state.go(name)
+            }
           },
 
           get currentRoute () {
